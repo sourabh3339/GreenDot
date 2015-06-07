@@ -1,0 +1,131 @@
+#header {
+    
+}
+
+.horizontal {
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    font-size: 17px;
+}
+
+.space.horizontal {
+    padding-left: 900px;
+    padding-top: 42px;
+}
+
+.horizontal.title {
+    font-size: 30px;
+    position: relative;
+    top: -12px;
+    font-style: oblique;
+}
+
+.horizontal.minutegap {
+    padding-left: 25px;
+}
+
+.general-height {
+    height: 420px;
+}
+
+#leftArrow {
+    position: relative;
+    height: 12px;
+    width: 12px;
+    float: left;
+    top: -50%;
+    background-color: red;
+}
+
+#rightArrow {
+    position: relative;
+    height: 12px;
+    width: 12px;
+    float: right;
+    top: -50%;
+    background-color: red;
+}
+
+#footer {
+    color: grey;
+    height: 60px;
+}
+
+#footer div {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    font-size: 20px;
+    margin-left: 120px
+}
+
+#secondContent {
+    height: 420px;
+}
+
+.image-height {
+    height: 420px;
+    width: 1333px;
+}
+
+.contentBoxOne {
+    position: relative;
+    font-size: 33px;
+    color: rgb(129, 121, 125);
+    top: 81px;
+    padding-left: 37%;
+}
+
+.contentBoxTwo {
+    position: relative;
+    font-size: 33px;
+    color: rgb(129, 121, 125);
+    top: 110px;
+    padding-left: 37%;
+}
+
+#secondContentOne div {
+    color: grey;
+    font-size: 20px;
+    margin: 14px;
+}
+
+.line-one {
+    height: 20px;
+    width: 704px;
+    position: relative;
+    text-align: center;
+    left: -35%;
+    margin-bottom: 36px
+}
+
+#secondContentTwo div {
+    color: grey;
+    font-size: 20px;
+    margin: 14px;
+}
+
+.horizontal-block-list-view {
+    display: inline-block;
+    position: relative;
+    top: 80px;
+    margin: 25px;
+    left: 40px;
+}
+
+.BiggerText {
+    position: relative;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(87, 81, 81);
+}
+
+.SmallerText {
+    position: relative;
+    text-align: center;
+    font-size: larger;
+    width: 306px;
+    height: 33px;
+    color: grey;
+}
