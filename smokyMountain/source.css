@@ -1,6 +1,4 @@
-#header {
-    
-}
+#header {}
 
 .horizontal {
     display: inline-block;
@@ -30,21 +28,21 @@
 }
 
 #leftArrow {
-    position: relative;
+    position: absolute;
     height: 12px;
     width: 12px;
     float: left;
-    top: -50%;
-    background-color: red;
+    z-index: 999;
+    top: 191px;
 }
 
 #rightArrow {
-    position: relative;
+    position: absolute;
     height: 12px;
     width: 12px;
     float: right;
-    top: -50%;
-    background-color: red;
+    z-index: 999;
+    top: 191px;
 }
 
 #footer {
@@ -65,6 +63,7 @@
 }
 
 .image-height {
+    position: relative;
     height: 420px;
     width: 1333px;
 }
@@ -96,7 +95,7 @@
     width: 704px;
     position: relative;
     text-align: center;
-    left: -35%;
+    left: -34%;
     margin-bottom: 36px
 }
 
@@ -104,6 +103,7 @@
     color: grey;
     font-size: 20px;
     margin: 14px;
+    margin-left: -8px;
 }
 
 .horizontal-block-list-view {
@@ -128,4 +128,19 @@
     width: 306px;
     height: 33px;
     color: grey;
+}
+
+.arrow {
+    height: 52px;
+}
+
+.arrow.right-side {
+    position: absolute;
+    left: 1280px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
