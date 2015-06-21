@@ -1,4 +1,22 @@
-#header {}
+#header {
+    color: grey;
+    background-color: rgb(73, 76, 79);
+}
+
+hr {
+    position: relative;
+    margin-top: 132px;
+}
+
+#body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./resource/color_image_2.jpg);
+}
+
+.title:hover {
+    cursor: pointer;
+}
 
 .horizontal {
     display: inline-block;
@@ -8,8 +26,15 @@
 }
 
 .space.horizontal {
-    padding-left: 900px;
+    margin-left: 900px;
     padding-top: 42px;
+    transition: color 0.4s ease;
+}
+
+.space.horizontal:hover {
+    color: green;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .horizontal.title {
@@ -21,6 +46,13 @@
 
 .horizontal.minutegap {
     padding-left: 25px;
+    cursor: pointer;
+    transition: color 0.7s ease;
+}
+
+.horizontal.minutegap:hover {
+    color: green;
+    font-size: 30px;
 }
 
 .general-height {
@@ -36,6 +68,10 @@
     top: 191px;
 }
 
+#leftArrow:hover {
+    cursor: pointer;
+}
+
 #rightArrow {
     position: absolute;
     height: 12px;
@@ -45,9 +81,14 @@
     top: 191px;
 }
 
+#rightArrow:hover {
+    cursor: pointer;
+}
+
 #footer {
     color: grey;
     height: 60px;
+    background-color: rgb(73, 76, 79);
 }
 
 #footer div {
@@ -55,11 +96,14 @@
     display: inline-block;
     top: 50%;
     font-size: 20px;
-    margin-left: 120px
+    margin-left: 120px;
+    transition: color 0.7s ease;
 }
 
-#secondContent {
-    height: 420px;
+#footer div:hover {
+    color: green;
+    cursor: pointer;
+    font-size: 30px;
 }
 
 .image-height {
@@ -73,7 +117,7 @@
     font-size: 33px;
     color: rgb(129, 121, 125);
     top: 81px;
-    padding-left: 37%;
+    padding-left: 38%;
 }
 
 .contentBoxTwo {
@@ -81,7 +125,7 @@
     font-size: 33px;
     color: rgb(129, 121, 125);
     top: 110px;
-    padding-left: 37%;
+    padding-left: 38%;
 }
 
 #secondContentOne div {
@@ -126,7 +170,7 @@
     text-align: center;
     font-size: larger;
     width: 306px;
-    height: 33px;
+    max-height: 80px;
     color: grey;
 }
 
@@ -144,3 +188,15 @@
     filter: FlipH;
     -ms-filter: "FlipH";
 }
+
+#videoDiv {
+    position: relative;
+    margin-top: 10px;
+}
+/*
+#howWeDo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./resource/color_image_4.jpg);
+}
+*/

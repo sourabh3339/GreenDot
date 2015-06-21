@@ -1,9 +1,41 @@
 (function() {
     console.log("it is loaded");
-  
+
     var j = 0.1;
     var i = 1;
     var k = 1;
+    /*add event listeners to left,right arrow*/
+    var leftArrow = document.getElementById('leftArrow');
+    var rightArrow = document.getElementById('rightArrow');
+
+    leftArrow.addEventListener("click", changePoster, false);
+    rightArrow.addEventListener("click", changePoster, false);
+
+    /*function to change poster*/
+    function changePoster(evt) {
+        /*take name of class from target*/
+        var className = evt.target.classList[1];
+        console.log("clicked on: " + className);
+        switch (className) {
+            case "right-side":
+                if (k >= 3) { //to avoid overflow check value of k, where index of k depends on number of images
+                    k = 1;
+                } else {
+                    k++
+                }
+
+                break;
+            default:
+                if (k <= 1) { //check for decrementing
+                    k = 3;
+                } else {
+                    k--;
+                }
+                break;
+        }
+
+    };
+
     var slider = {
         name: "mytext",
         imageDiv: document.getElementsByClassName("image-height"),
@@ -55,7 +87,7 @@
         },
         changeOpacity: function() {
             j = j + 0.01;
-            console.log(j);
+            console.log(k);
             switch (k) {
                 case 1:
                     this.img2.style.opacity = 0;
@@ -87,7 +119,7 @@
             }
 
         },
-       
+
 
     };
 
