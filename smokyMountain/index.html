@@ -4,6 +4,10 @@
     <title>Golden Moon</title>
     <link rel="stylesheet" type="text/css" href="source.css">
     <script defer src="source.js" type="text/javascript"></script>
+    <!-- google map api -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <!-- to manipulate map api function -->
+    <script defer src="map.js" type="text/javascript"></script>
 </head>
 
 <body id="body">
@@ -15,7 +19,6 @@
     <div id="firstContent" class="general-height image-height">
         <div id="scrollingImg">
             <img src="resource/Hex_Slide_1.jpg" class="image-height">
-            
         </div>
         <div id="leftArrow">
             <img src="resource/left_arrow.png" class="arrow">
@@ -67,6 +70,8 @@
             <div class="smallerText">There are infinite possibilities to composing your art. You are original, your art should be too.</div>
         </div>
     </div>
+    <hr>
+    <div id="googleMap" class="map"></div>
 </body>
 
 </html>

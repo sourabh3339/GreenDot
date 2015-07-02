@@ -87,7 +87,7 @@
         },
         changeOpacity: function() {
             j = j + 0.01;
-            console.log(k);
+            //console.log(k);
             switch (k) {
                 case 1:
                     this.img2.style.opacity = 0;

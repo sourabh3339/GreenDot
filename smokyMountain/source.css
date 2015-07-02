@@ -3,10 +3,10 @@
     background-color: rgb(73, 76, 79);
 }
 
-hr {
+/*hr {
     position: relative;
     margin-top: 132px;
-}
+}*/
 
 #body {
     background-size: cover;
@@ -121,11 +121,18 @@ hr {
 }
 
 .contentBoxTwo {
-    position: relative;
+    /*position: relative;
     font-size: 33px;
     color: rgb(129, 121, 125);
     top: 110px;
-    padding-left: 38%;
+    padding-left: 38%;*/
+
+
+    position: relative;
+  font-size: 33px;
+  color: rgb(129, 121, 125);
+  padding-left: 38%;
+  margin-top: 183px;
 }
 
 #secondContentOne div {
@@ -163,6 +170,7 @@ hr {
     text-align: center;
     font-size: x-large;
     color: rgb(87, 81, 81);
+    margin-top: 12px;
 }
 
 .SmallerText {
@@ -171,6 +179,7 @@ hr {
     font-size: larger;
     width: 306px;
     max-height: 80px;
+    margin-top: 14px;
     color: grey;
 }
 
@@ -200,3 +209,10 @@ hr {
     background-image: url(./resource/color_image_4.jpg);
 }
 */
+.map{
+    margin-top: 30px;
+    width:50%;
+    height:380px;
+    left: 18%;
+
+}
