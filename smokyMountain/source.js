@@ -4,6 +4,7 @@
     var j = 0.1;
     var i = 1;
     var k = 1;
+
     /*add event listeners to left,right arrow*/
     var leftArrow = document.getElementById('leftArrow');
     var rightArrow = document.getElementById('rightArrow');
@@ -72,6 +73,11 @@
 
             this.img1.style.top = '-421px';
             this.img2.style.top = '-841px';
+
+            /*
+                        this.img1.style.top = '-210px';
+                        this.img2.style.top = '-420px';*/
+
             this.img1.style.zIndex = '1';
             this.img2.style.zIndex = '2';
 
@@ -122,27 +128,26 @@
 
 
     };
+    /*function to change position of image in case window is resized*/
+    function resized(evt) {
+        console.log("resized called");
+        if (window.innerWidth < 716) {
+            this.img1.style.top = '-210px';
+            this.img2.style.top = '-420px';
+        } else {
+            this.img1.style.top = '-421px';
+            this.img2.style.top = '-841px';
 
+        }
+    };
+
+    /*adding eventlistner to change position of image*/
+    window.addEventListener("load", resized.bind(slider));
+    window.addEventListener("resize", resized.bind(slider));
+
+    /*creating poster image*/
     slider.createPosterImage();
-    // slider.changeOpacity();
+
     setInterval(slider.changeOpacity.bind(slider), 50);
-    //setInterval(slider.posterChange.bind(slider), 1000);//binded with slider otherwise run in windows context
 
-    /*changePoster through visibility*/
-
-
-
-
-    /*var i=0;
-    var im=document.getElementById('scrollingImg');
-    im.style.position='relative'
-    var del=function(){
-    im.style.left=i+"px";
-    i++;
-    if(i=="1440"){
-        i=0;
-    }
-    }
-    setInterval(del,1);
-    */
 }());
